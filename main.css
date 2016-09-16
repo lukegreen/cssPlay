@@ -1,0 +1,46 @@
+#first-square, #second-square, #third-square, #fourth-square {
+  width: 200px;
+  height: 200px;
+}
+
+#first-square {
+  background-color: red;
+  position: relative;
+  top: 100px
+}
+
+#second-square {
+  background-color: blue;
+  position: relative;
+  left: 400px;
+  bottom: 200px
+}
+
+#third-square {
+  background-color: green;
+  position: relative;
+  left: 300px;
+  bottom: 200px
+}
+
+#fourth-square {
+  background-color: orange;
+  position: relative;
+  left: 200px;
+  bottom: 200px
+}
+
+#absolute-exp {
+  width: 400px;
+  height: 100px;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+p {
+  position: absolute;
+  font-family: 'Muli', sans-serif;
+}
