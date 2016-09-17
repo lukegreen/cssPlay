@@ -1,46 +1,33 @@
-#first-square, #second-square, #third-square, #fourth-square {
-  width: 200px;
-  height: 200px;
+body {
+  background-color: black;
 }
 
-#first-square {
+.first-square, .second-square, .third-square, .fourth-square, .black-square {
+  width: 208px;
+  height: 208px;
+  display: inline-block;
+}
+
+.first-square {
   background-color: red;
-  position: relative;
-  top: 100px
 }
 
-#second-square {
+.second-square {
   background-color: blue;
-  position: relative;
-  left: 400px;
-  bottom: 200px
 }
 
-#third-square {
+.third-square {
   background-color: green;
-  position: relative;
-  left: 300px;
-  bottom: 200px
 }
 
-#fourth-square {
+.fourth-square {
   background-color: orange;
-  position: relative;
-  left: 200px;
-  bottom: 200px
 }
 
-#absolute-exp {
-  width: 400px;
-  height: 100px;
-  background-color: gray;
-  position: fixed;
-  top: 0;
-  left: 0;
-  
+.black-square {
+  background-color: black;
 }
 
 p {
-  position: absolute;
   font-family: 'Muli', sans-serif;
 }
