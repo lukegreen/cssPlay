@@ -10,22 +10,29 @@ body {
 
 .first-square {
   background-color: red;
+  transition: transform 4s;
+  transition-timing-function: ease-in;
 }
 
 .second-square {
   background-color: blue;
+  transition: transform 4s;
+  transition-delay: .5s;
+  transition-timing-function: ease-in;
 }
 
 .third-square {
   background-color: green;
+  transition: transform 4s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in;
 }
 
 .fourth-square {
   background-color: orange;
-}
-
-.black-square {
-  background-color: black;
+  transition: transform 4s;
+  transition-delay: 1.5s;
+  transition-timing-function: ease-in;
 }
 
 p {
