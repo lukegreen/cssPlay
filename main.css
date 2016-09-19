@@ -1,31 +1,47 @@
+@keyframes moveLeft {
+  0% {left: 0px}
+  100% {left: 400px}
+}
+
+@keyframes moveBack {
+  0% {left: 0px}
+  50% {left: 400px}
+  100% {left: 0px}
+}
+
 body {
   background-color: black;
 }
 
 .first-square, .second-square, .third-square, .fourth-square, .black-square {
-  width: 245px;
+  width: 10px;
   height: 245px;
   display: inline-block;
+  position: relative;
 }
 
 .first-square {
-  background-color: #79C6CC;
   transition: transform 4s;
   transition-timing-function: ease-in;
-}
+  }
 
 .second-square {
-  background-color: #70CFFF;
+  background-color: red;
   transition: transform 4s;
   transition-delay: .5s;
   transition-timing-function: ease-in;
+  -webkit-animation: moveLeft 2s linear;
+  animation-fill-mode: forwards;
+  backface-visibility: hidden;
 }
 
 .third-square {
   background-color: #FFE5B0;
   transition: transform 4s;
-  transition-delay: 1s;
+  transition-delay: 4s;
   transition-timing-function: ease-in;
+  -webkit-animation: moveBack 2s linear;
+  animation-fill-mode: forwards
 }
 
 .fourth-square {

@@ -7,7 +7,7 @@ $(document).ready(function(){
       $('.black-square').css('display','inline-block');
     }*/
 
-    $('.first-square, .second-square, .third-square, .fourth-square').css('transform','rotateY(360deg)');
+    $('.first-square, .second-square, .third-square, .fourth-square').css('transform','rotateY(180deg)');
 
   });
 })
