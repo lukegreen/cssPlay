@@ -3,33 +3,33 @@ body {
 }
 
 .first-square, .second-square, .third-square, .fourth-square, .black-square {
-  width: 208px;
-  height: 208px;
+  width: 245px;
+  height: 245px;
   display: inline-block;
 }
 
 .first-square {
-  background-color: red;
+  background-color: #79C6CC;
   transition: transform 4s;
   transition-timing-function: ease-in;
 }
 
 .second-square {
-  background-color: blue;
+  background-color: #70CFFF;
   transition: transform 4s;
   transition-delay: .5s;
   transition-timing-function: ease-in;
 }
 
 .third-square {
-  background-color: green;
+  background-color: #FFE5B0;
   transition: transform 4s;
   transition-delay: 1s;
   transition-timing-function: ease-in;
 }
 
 .fourth-square {
-  background-color: orange;
+  background-color: #998B2C;
   transition: transform 4s;
   transition-delay: 1.5s;
   transition-timing-function: ease-in;
