@@ -1,56 +1,68 @@
-@keyframes moveLeft {
-  0% {left: 0px}
-  100% {left: 400px}
-}
-
-@keyframes moveBack {
-  0% {left: 0px}
-  50% {left: 400px}
-  100% {left: 0px}
-}
 
 body {
   background-color: black;
 }
 
 .first-square, .second-square, .third-square, .fourth-square, .black-square {
-  width: 10px;
-  height: 245px;
+  width: 15px;
+  height: 100px;
   display: inline-block;
   position: relative;
+  top: 100px
 }
 
 .first-square {
+  visibility: hidden;
+  background-color: gray;
   transition: transform 4s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-in-out;
+  -webkit-animation: move 1s linear;
+  -webkit-animation-delay: 1.75s;
+  animation-fill-mode: forwards;
   }
 
 .second-square {
+  visibility: hidden;
   background-color: red;
   transition: transform 4s;
   transition-delay: .5s;
-  transition-timing-function: ease-in;
-  -webkit-animation: moveLeft 2s linear;
+  transition-timing-function: ease-in-out;
+  -webkit-animation: move 1s linear;
+  -webkit-animation-delay: 1.5s;
   animation-fill-mode: forwards;
-  backface-visibility: hidden;
 }
 
 .third-square {
+  visibility: hidden;
   background-color: #FFE5B0;
   transition: transform 4s;
   transition-delay: 4s;
-  transition-timing-function: ease-in;
-  -webkit-animation: moveBack 2s linear;
+  transition-timing-function: ease-in-out;
+  -webkit-animation: move 1s linear;
+  -webkit-animation-delay: 1.25s;
   animation-fill-mode: forwards
 }
 
 .fourth-square {
+  visibility: hidden;
   background-color: #998B2C;
   transition: transform 4s;
   transition-delay: 1.5s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-in-out;
+  -webkit-animation: move 1s linear;
+  -webkit-animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 p {
   font-family: 'Muli', sans-serif;
+}
+
+.first-square:hover {
+  background-color: blue;
+}
+
+@keyframes move {
+  0% {left: 0px; background-color: gray}
+  100% {left: 1000px; visibility: visible; width: 50px}
 }
