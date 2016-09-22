@@ -4,7 +4,7 @@ body {
 }
 
 .first-square, .second-square, .third-square, .fourth-square, .black-square {
-  width: 15px;
+  width: 0px;
   height: 100px;
   display: inline-block;
   position: relative;
@@ -12,10 +12,11 @@ body {
 }
 
 .first-square {
-  visibility: hidden;
   background-color: gray;
   transition: transform 4s;
   transition-timing-function: ease-in-out;
+  transition: width .5s;
+  transition: height .5s;
   -webkit-animation: move 1s linear;
   -webkit-animation-delay: 1.75s;
   animation-fill-mode: forwards;
@@ -26,6 +27,8 @@ body {
   background-color: red;
   transition: transform 4s;
   transition-delay: .5s;
+  transition: width .5s;
+  transition: height .5s;
   transition-timing-function: ease-in-out;
   -webkit-animation: move 1s linear;
   -webkit-animation-delay: 1.5s;
@@ -37,6 +40,8 @@ body {
   background-color: #FFE5B0;
   transition: transform 4s;
   transition-delay: 4s;
+  transition: width .5s;
+  transition: height .5s;
   transition-timing-function: ease-in-out;
   -webkit-animation: move 1s linear;
   -webkit-animation-delay: 1.25s;
@@ -49,20 +54,24 @@ body {
   transition: transform 4s;
   transition-delay: 1.5s;
   transition-timing-function: ease-in-out;
+  transition: width .5s;
+  transition: height .5s;
   -webkit-animation: move 1s linear;
   -webkit-animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
-p {
+p, h1, h2, h3 {
   font-family: 'Muli', sans-serif;
 }
 
-.first-square:hover {
-  background-color: blue;
+.first-square:hover, .second-square:hover, .third-square:hover, .fourth-square:hover {
+  width: 55px;
+  height: 105px
 }
 
 @keyframes move {
   0% {left: 0px; background-color: gray}
+  60% {width: 5px}
   100% {left: 1000px; visibility: visible; width: 50px}
 }
